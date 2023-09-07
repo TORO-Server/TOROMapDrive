@@ -17,3 +17,7 @@ Google ドライブにアップロードします。
 ## セットアップ
 
 Ruby、Python3、ffmpeg、git が必要です。
+
+```sh
+bash setup.sh
+```
