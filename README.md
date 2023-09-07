@@ -1,0 +1,19 @@
+# TOROMapDrive
+
+```sh
+bash getImage.sh GoogleAppsScriptのURL
+```
+
+を実行すると TORO サーバーの Dynmap から地図を png ファイルでダウンロードして
+
+Google ドライブにアップロードします。
+
+## 仕組み
+
+1. python で Dynmap から地図をダウンロードして map ディレクトリに png ファイルで保存する。
+2. ffmpeg で保存した png ファイルから解像度が低い png ファイルを生成する。
+3. 生成した解像度が低い png ファイルを Ruby と Google Apps Script を利用して Google ドライブにアップロードする。
+
+## セットアップ
+
+Ruby、Python3、ffmpeg、git が必要です。
