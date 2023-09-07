@@ -12,7 +12,7 @@ Google ドライブにアップロードします。
 
 1. python で Dynmap から地図をダウンロードして map ディレクトリに png ファイルで保存する。
 2. ffmpeg で保存した png ファイルから解像度が低い png ファイルを生成する。
-3. 生成した解像度が低い png ファイルを Ruby と Google Apps Script を利用して Google ドライブにアップロードする。
+3. 生成した解像度が低い png ファイルを Google ドライブにアップロードする。
 
 ## セットアップ
 
