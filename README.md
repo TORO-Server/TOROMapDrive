@@ -8,6 +8,8 @@ bash getImage.sh GoogleAppsScriptのURL
 
 Google ドライブにアップロードします。
 
+[GASディレクトリ](/GAS)にあるファイルはGoogleAppsScriptに配置するコードです。
+
 ## 仕組み
 
 1. python で Dynmap から地図をダウンロードして map ディレクトリに png ファイルで保存する。
