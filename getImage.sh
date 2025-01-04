@@ -11,8 +11,8 @@ TIME=$(date "+%Y-%m-%d")
 # Dynmapの画像を取得する
 # https://github.com/hampta/minecraft-dynmap-timemachine
 cd ./minecraft-dynmap-timemachine
-python3 dynmap-timemachine.py -v http://torosaba.net:60016/ main flat [0,100,-2000] [25,25] 4 ../map/main-flat-$TIME.png
-python3 dynmap-timemachine.py -v http://torosaba.net:60016/ flat flat [0,100,0] [10,10] 4 ../map/flat-flat-$TIME.png
+python3 dynmap-timemachine.py -v https://map.torosaba.net/ main flat [0,100,-2000] [25,25] 4 ../map/main-flat-$TIME.png
+python3 dynmap-timemachine.py -v https://map.torosaba.net/ flat flat [0,100,0] [10,10] 4 ../map/flat-flat-$TIME.png
 
 # ffmpeg を利用して 解像度を下げたpngファイルを生成
 cd ../map
