@@ -2,7 +2,7 @@ name: Release TOROMapDrive
 on:
   push:
     tags:
-      - "v*.*.*-*"
+      - "v*.*.*"
   workflow_dispatch:
 jobs:
   build-and-push:
