@@ -1,23 +1,15 @@
-FROM gcr.io/distroless/static-debian12 AS builder
+FROM python:3.10 AS builder
+
+RUN apt update && apt install -y git ruby ffmpeg
 
 WORKDIR /app
 
-RUN apk update && apk add --no-cache python3 git
+ENV GAS_URL="GoogleAppsScriptURL"
 
 COPY setup.sh setup.sh
+COPY getImage.sh getImage.sh
+COPY upload.rb upload.rb
 
-RUN ["../setup.sh"]
+RUN ["bash", "setup.sh"]
 
-FROM gcr.io/distroless/static-debian12
-
-WORKDIR /app
-
-RUN apk update && apk add --no-cache ruby python3 ffmpeg
-
-COPY --from=builder /app /app
-
-COPY getImage.sh /app/getImage.sh
-
-COPY upload.rb /app/upload.rb
-
-CMD ["getImage.sh"]
+CMD ["bash", "getImage.sh", "$GAS_URL"]
