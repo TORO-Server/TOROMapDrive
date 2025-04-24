@@ -1,7 +1,8 @@
 # TOROMapDrive
 
 ```sh
-bash getImage.sh GoogleAppsScriptのURL
+GAS_URL="GoogleAppsScriptのURL"
+bash getImage.sh
 ```
 
 を実行すると TORO サーバーの Dynmap から地図を png ファイルでダウンロードして
