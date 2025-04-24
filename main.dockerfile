@@ -9,7 +9,8 @@ ENV GAS_URL="GoogleAppsScriptURL"
 COPY setup.sh setup.sh
 COPY getImage.sh getImage.sh
 COPY upload.rb upload.rb
+RUN ["chmod", "+x", "-R", "./"]
 
-RUN ["bash", "-c", "setup.sh"]
+RUN ["bash", "-c", "./setup.sh"]
 
-CMD ["bash", "-c", "getImage.sh", "$GAS_URL"]
+CMD ["bash", "-c", "./getImage.sh"]
