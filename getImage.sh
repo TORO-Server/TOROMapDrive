@@ -13,10 +13,10 @@ python3 dynmap-timemachine.py -v https://map.torosaba.net/ flat flat [0,100,0] [
 
 # ffmpeg を利用して 解像度を下げたpngファイルを生成
 cd ../map
-ffmpeg -y -i main-flat-origin.png -s 2048:2048 main-flat-lite.png
-ffmpeg -y -i flat-flat-origin.png -s 2048:2048 flat-flat-lite.png
+ffmpeg -y -i main-flat-origin.png -s 2048:2048 main-flat.png
+ffmpeg -y -i flat-flat-origin.png -s 2048:2048 flat-flat.png
 
 # Googleドライブにアップロード
 cd ..
-ruby upload.rb ./map/main-flat-lite.png $GAS_URL
-ruby upload.rb ./map/flat-flat-lite.png $GAS_URL
+ruby upload.rb ./map/main-flat.png $GAS_URL
+ruby upload.rb ./map/flat-flat.png $GAS_URL
