@@ -24,3 +24,9 @@ Ruby、Python3、ffmpeg、git が必要です。
 ```sh
 bash setup.sh
 ```
+
+## Docker Build
+
+```pwsh
+docker build -t toro-server/toro-map-drive -f main.dockerfile .
+```
