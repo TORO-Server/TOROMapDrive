@@ -21,5 +21,5 @@ ffmpeg -y -i flat-flat-origin.png -s 2048:2048 flat-flat-lite.png
 
 # Googleドライブにアップロード
 cd ..
-ruby upload.rb ./map/main-flat.png $GoogleAppsScript
-ruby upload.rb ./map/flat-flat.png $GoogleAppsScript
+ruby upload.rb ./map/main-flat-lite.png $GoogleAppsScript
+ruby upload.rb ./map/flat-flat-lite.png $GoogleAppsScript
