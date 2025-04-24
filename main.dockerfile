@@ -10,6 +10,6 @@ COPY setup.sh setup.sh
 COPY getImage.sh getImage.sh
 COPY upload.rb upload.rb
 
-RUN ["bash", "setup.sh"]
+RUN ["bash", "-c", "setup.sh"]
 
-CMD ["bash", "getImage.sh", "$GAS_URL"]
+CMD ["bash", "-c", "getImage.sh", "$GAS_URL"]
