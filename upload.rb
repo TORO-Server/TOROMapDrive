@@ -4,6 +4,9 @@ require "base64"
 Path = ARGV[0]
 URL = ARGV[1]
 
+puts "Path: #{Path}"
+puts "URL: #{URL}"
+
 # ファイルを開く
 File.open(Path, "rb") do |content|
   # ファイルの内容を Base64 に変換
