@@ -2,8 +2,6 @@
 
 # このshファイルがあるディレクトリに移動(相対パスに対応させるため)
 cd $(dirname $0)
-# 時間取得
-TIME=$(date "+%Y-%m-%d")
 
 # Dynmapの画像を取得する
 # https://github.com/hampta/minecraft-dynmap-timemachine
