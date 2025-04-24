@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# GoogleAppsScriptのURLを取得
-GoogleAppsScript=$1
-
 # このshファイルがあるディレクトリに移動(相対パスに対応させるため)
 cd $(dirname $0)
 # 時間取得
@@ -21,5 +18,5 @@ ffmpeg -y -i flat-flat-origin.png -s 2048:2048 flat-flat-lite.png
 
 # Googleドライブにアップロード
 cd ..
-ruby upload.rb ./map/main-flat-lite.png $GoogleAppsScript
-ruby upload.rb ./map/flat-flat-lite.png $GoogleAppsScript
+ruby upload.rb ./map/main-flat-lite.png $GAS_URL
+ruby upload.rb ./map/flat-flat-lite.png $GAS_URL
